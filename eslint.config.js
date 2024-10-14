@@ -15,22 +15,9 @@ export default tseslint.config(
     },
   },
   {
-    files: ['**/*.ts'],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
-  },
-  {
     files: ['**/*.vue'],
     languageOptions: {
       parserOptions: { parser: tseslint.parser },
     },
-  },
-  {
-    files: ['**/*.js'],
-    ...tseslint.configs.disableTypeChecked,
   }
 );
