@@ -3,6 +3,7 @@ import prettier from 'eslint-config-prettier';
 import vue from 'eslint-plugin-vue';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
+import vueParser from 'vue-eslint-parser';
 
 export default tseslint.config(
   { ignores: ['dist', 'public'] },
@@ -12,11 +13,7 @@ export default tseslint.config(
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
-    },
-  },
-  {
-    files: ['**/*.vue'],
-    languageOptions: {
+      parser: vueParser,
       parserOptions: { parser: tseslint.parser },
     },
   }
