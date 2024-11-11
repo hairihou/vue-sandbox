@@ -16,5 +16,8 @@ export default tseslint.config(
       parser: vueParser,
       parserOptions: { parser: tseslint.parser },
     },
+    rules: {
+      '@typescript-eslint/consistent-type-imports': ['warn', { fixStyle: 'inline-type-imports' }],
+    },
   }
 );
