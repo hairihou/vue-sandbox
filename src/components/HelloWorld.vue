@@ -10,7 +10,7 @@ const count = ref(0);
 </script>
 
 <template>
-  <h1 class="text-[3.2em] leading-[1.1]">{{ msg }}</h1>
+  <h1 class="font-bold text-[3.2em] leading-[1.1]">{{ msg }}</h1>
 
   <CardBase>
     <ButtonBase @click="count++">count is {{ count }}</ButtonBase>
