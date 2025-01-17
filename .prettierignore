@@ -1,2 +1,3 @@
-**/pnpm-lock.yaml
+**/.vscode
 **/public
+**/pnpm-lock.yaml

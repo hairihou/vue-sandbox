@@ -1,3 +1,4 @@
+// @ts-check
 import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
 import vue from 'eslint-plugin-vue';
